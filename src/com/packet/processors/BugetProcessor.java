@@ -14,6 +14,7 @@ public class BugetProcessor implements IProcessor {
 
     /**
      * Generic constructor
+     *
      * @param price The price for this type of processor
      */
     public BugetProcessor(int price) {
