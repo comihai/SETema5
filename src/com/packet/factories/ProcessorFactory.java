@@ -14,26 +14,26 @@ import com.packet.processors.MainstreamProcessor;
  */
 public class ProcessorFactory extends AbstractFactory{
     @Override
-    public IOperatingSystem getOperatingSystem(String operatingSystem) {
+    public IOperatingSystem getOperatingSystem(String operatingSystem, int numberOfWorkingComputers, double autonomy, int numberOfUsers, String schedulingAlgorithm, int timeSharing) {
         return null;
     }
 
     @Override
-    public IProcessor getProcessor(String processor) {
+    public IProcessor getProcessor(String processor, int price, String cpuSocket, double frequency, int powerRequired) {
         if(processor == null) {
             return null;
         }
         if(processor.equalsIgnoreCase("BUGETPROCESSOR"))
         {
-            return new BugetProcessor();
+            return new BugetProcessor(price);
         }
         else if(processor.equalsIgnoreCase("DUALCOREPROCESSOR"))
         {
-            return new DualCoreProcessor();
+            return new DualCoreProcessor(price,cpuSocket,frequency);
         }
         else if(processor.equalsIgnoreCase("MAINSTREAMPROCESSOR"))
         {
-            return new MainstreamProcessor();
+            return new MainstreamProcessor(price,powerRequired);
         }
         return null;
     }

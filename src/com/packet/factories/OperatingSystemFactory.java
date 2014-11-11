@@ -14,32 +14,32 @@ import com.packet.operatingSystems.RealTime;
  */
 public class OperatingSystemFactory extends AbstractFactory{
     @Override
-    public IOperatingSystem getOperatingSystem(String operatingSystem) {
+    public IOperatingSystem getOperatingSystem(String operatingSystem, int numberOfWorkingComputers, double autonomy, int numberOfUsers, String schedulingAlgorithm, int timeSharing) {
         if(operatingSystem == null) {
             return null;
         }
         if(operatingSystem.equalsIgnoreCase("REALTIME"))
         {
-            return new RealTime();
+            return new RealTime(schedulingAlgorithm,timeSharing);
         }
         else if(operatingSystem.equalsIgnoreCase("MULTIUSER"))
         {
-            return new MultiUser();
+            return new MultiUser(numberOfUsers);
         }
         else if(operatingSystem.equalsIgnoreCase("EMBEDDED"))
         {
-            return new Embedded();
+            return new Embedded(autonomy);
         }
         else if(operatingSystem.equalsIgnoreCase("DISTRIBUTED"))
         {
-            return new Distributed();
+            return new Distributed(numberOfWorkingComputers);
         }
         return null;
 
     }
 
     @Override
-    public IProcessor getProcessor(String processor) {
+    public IProcessor getProcessor(String processor, int price, String cpuSocket, double frequency,int powerRequired) {
         return null;
     }
 }

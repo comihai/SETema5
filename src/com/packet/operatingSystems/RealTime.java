@@ -58,6 +58,6 @@ public class RealTime implements IOperatingSystem {
 
     @Override
     public void systemCall() {
-        System.out.println("This is a multitasking OS that aims at executing real-time apps ! The scheduling algorithm is " + schedulingAlgorithm + " and the time-sharing is " + timeSharing);
+        System.out.println("This is a multitasking OS that aims at executing real-time apps !\n The scheduling algorithm is " + schedulingAlgorithm + " and the time-sharing is " + timeSharing+" ms.");
     }
 }

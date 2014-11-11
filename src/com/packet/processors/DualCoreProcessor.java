@@ -70,6 +70,6 @@ public class DualCoreProcessor implements IProcessor {
 
     @Override
     public void clockSpeed() {
-        System.out.println("This processor introduces many complexities through doubling the already-high power consumption and heat production.!\n Price :  " + price + "\nCPU Socket : " + cpuSocket + "\nFrequency : " + frequency);
+        System.out.println("This processor introduces many complexities through doubling the already-high power consumption and heat production.!\n Price :  " + price + " $\nCPU Socket : " + cpuSocket + "\nFrequency : " + frequency+" GHz.");
     }
 }

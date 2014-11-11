@@ -48,6 +48,6 @@ public class Distributed implements IOperatingSystem {
 
     @Override
     public void systemCall() {
-        System.out.println("This is a operating system that manages a group of independent computers and makes them appear to be a single computer! Maxim number of computers that work at the same time is " + numberOfWorkingComputers);
+        System.out.println("This is a operating system that manages a group of independent computers and makes them appear to be a single computer!\n Maxim number of computers that work at the same time is " + numberOfWorkingComputers+".");
     }
 }
