@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.packet.Main</OriginalElement>
+  <nodes>
+    <node x="926.9999999999998" y="146.0">com.packet.abstractFactory.AbstractFactory</node>
+    <node x="389.31785714285684" y="0.0">com.packet.interfaces.IOperatingSystem</node>
+    <node x="1403.9999999999998" y="123.0">com.packet.processors.BugetProcessor</node>
+    <node x="353.4999999999998" y="314.0">com.packet.factories.OperatingSystemFactory</node>
+    <node x="710.9999999999998" y="123.0">com.packet.operatingSystems.Distributed</node>
+    <node x="1080.9374999999998" y="538.0">com.packet.Main</node>
+    <node x="1643.9999999999998" y="112.0">com.packet.processors.MainstreamProcessor</node>
+    <node x="1040.4374999999998" y="437.0">com.packet.factoryProducer.FactoryProducer</node>
+    <node x="1423.4999999999998" y="314.0">com.packet.factories.ProcessorFactory</node>
+    <node x="1955.9999999999998" y="101.0">com.packet.processors.DualCoreProcessor</node>
+    <node x="1744.985714285714" y="0.0">com.packet.interfaces.IProcessor</node>
+    <node x="0.0" y="123.0">com.packet.operatingSystems.MultiUser</node>
+    <node x="472.9999999999998" y="123.0">com.packet.operatingSystems.Embedded</node>
+    <node x="208.99999999999977" y="112.0">com.packet.operatingSystems.RealTime</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.packet.operatingSystems.Embedded" target="com.packet.interfaces.IOperatingSystem">
+      <point x="0.0" y="-59.5" />
+      <point x="581.9999999999998" y="81.0" />
+      <point x="479.31785714285684" y="81.0" />
+      <point x="18.0" y="25.5" />
+    </edge>
+    <edge source="com.packet.factoryProducer.FactoryProducer" target="com.packet.factories.OperatingSystemFactory">
+      <point x="-58.5" y="-25.5" />
+      <point x="1098.9374999999998" y="412.0" />
+      <point x="581.9999999999998" y="412.0" />
+      <point x="0.0" y="36.5" />
+    </edge>
+    <edge source="com.packet.factories.ProcessorFactory" target="com.packet.processors.MainstreamProcessor">
+      <point x="57.125" y="-36.5" />
+      <point x="1709.1249999999998" y="294.0" />
+      <point x="1789.9999999999998" y="294.0" />
+      <point x="0.0" y="70.5" />
+    </edge>
+    <edge source="com.packet.processors.DualCoreProcessor" target="com.packet.interfaces.IProcessor">
+      <point x="0.0" y="-81.5" />
+      <point x="2135.0" y="81.0" />
+      <point x="1867.485714285714" y="81.0" />
+      <point x="49.0" y="25.5" />
+    </edge>
+    <edge source="com.packet.factories.OperatingSystemFactory" target="com.packet.operatingSystems.Embedded">
+      <point x="0.0" y="-36.5" />
+      <point x="0.0" y="59.5" />
+    </edge>
+    <edge source="com.packet.factories.ProcessorFactory" target="com.packet.processors.DualCoreProcessor">
+      <point x="171.375" y="-36.5" />
+      <point x="1823.3749999999998" y="294.0" />
+      <point x="2135.0" y="294.0" />
+      <point x="0.0" y="81.5" />
+    </edge>
+    <edge source="com.packet.factories.OperatingSystemFactory" target="com.packet.operatingSystems.Distributed">
+      <point x="91.39999999999998" y="-36.5" />
+      <point x="673.3999999999997" y="284.0" />
+      <point x="808.9999999999998" y="284.0" />
+      <point x="0.0" y="59.5" />
+    </edge>
+    <edge source="com.packet.Main" target="com.packet.factoryProducer.FactoryProducer">
+      <point x="0.0" y="-25.5" />
+      <point x="0.0" y="25.5" />
+    </edge>
+    <edge source="com.packet.factories.OperatingSystemFactory" target="com.packet.abstractFactory.AbstractFactory">
+      <point x="182.79999999999995" y="-36.5" />
+      <point x="764.7999999999997" y="294.0" />
+      <point x="1041.2499999999998" y="294.0" />
+      <point x="-114.25" y="36.5" />
+    </edge>
+    <edge source="com.packet.factories.OperatingSystemFactory" target="com.packet.operatingSystems.RealTime">
+      <point x="-91.39999999999998" y="-36.5" />
+      <point x="490.5999999999998" y="284.0" />
+      <point x="330.9999999999998" y="284.0" />
+      <point x="0.0" y="70.5" />
+    </edge>
+    <edge source="com.packet.operatingSystems.RealTime" target="com.packet.interfaces.IOperatingSystem">
+      <point x="0.0" y="-70.5" />
+      <point x="330.9999999999998" y="81.0" />
+      <point x="443.31785714285684" y="81.0" />
+      <point x="-18.0" y="25.5" />
+    </edge>
+    <edge source="com.packet.operatingSystems.Distributed" target="com.packet.interfaces.IOperatingSystem">
+      <point x="0.0" y="-59.5" />
+      <point x="808.9999999999998" y="71.0" />
+      <point x="515.3178571428568" y="71.0" />
+      <point x="54.0" y="25.5" />
+    </edge>
+    <edge source="com.packet.processors.BugetProcessor" target="com.packet.interfaces.IProcessor">
+      <point x="0.0" y="-59.5" />
+      <point x="1513.9999999999998" y="81.0" />
+      <point x="1769.485714285714" y="81.0" />
+      <point x="-49.0" y="25.5" />
+    </edge>
+    <edge source="com.packet.factories.ProcessorFactory" target="com.packet.processors.BugetProcessor">
+      <point x="-57.125" y="-36.5" />
+      <point x="1594.8749999999998" y="294.0" />
+      <point x="1513.9999999999998" y="294.0" />
+      <point x="0.0" y="59.5" />
+    </edge>
+    <edge source="com.packet.processors.MainstreamProcessor" target="com.packet.interfaces.IProcessor">
+      <point x="0.0" y="-70.5" />
+      <point x="1789.9999999999998" y="81.0" />
+      <point x="1818.485714285714" y="81.0" />
+      <point x="0.0" y="25.5" />
+    </edge>
+    <edge source="com.packet.factories.ProcessorFactory" target="com.packet.abstractFactory.AbstractFactory">
+      <point x="-171.375" y="-36.5" />
+      <point x="1480.6249999999998" y="294.0" />
+      <point x="1269.7499999999998" y="294.0" />
+      <point x="114.25" y="36.5" />
+    </edge>
+    <edge source="com.packet.factories.OperatingSystemFactory" target="com.packet.operatingSystems.MultiUser">
+      <point x="-182.79999999999995" y="-36.5" />
+      <point x="399.1999999999998" y="294.0" />
+      <point x="94.5" y="294.0" />
+      <point x="0.0" y="59.5" />
+    </edge>
+    <edge source="com.packet.factoryProducer.FactoryProducer" target="com.packet.factories.ProcessorFactory">
+      <point x="58.5" y="-25.5" />
+      <point x="1215.9374999999998" y="412.0" />
+      <point x="1651.9999999999998" y="412.0" />
+      <point x="0.0" y="36.5" />
+    </edge>
+    <edge source="com.packet.operatingSystems.MultiUser" target="com.packet.interfaces.IOperatingSystem">
+      <point x="0.0" y="-59.5" />
+      <point x="94.5" y="71.0" />
+      <point x="407.31785714285684" y="71.0" />
+      <point x="-54.0" y="25.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.4250214224507284" x="1187.224934258692" y="299.4924743011252" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

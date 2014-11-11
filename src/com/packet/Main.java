@@ -19,7 +19,8 @@ public class Main {
         /**
          * get operatingSystem Factory
          */
-        AbstractFactory operatingSystemFactory = FactoryProducer.getFactory("OPERATINGSYSTEM");
+        FactoryProducer fp = new FactoryProducer();
+        AbstractFactory operatingSystemFactory = fp.getFactory("OPERATINGSYSTEM");
 
         IOperatingSystem os1 = operatingSystemFactory.getOperatingSystem("DISTRIBUTED",100,0,0,null,0);
         os1.systemCall();
