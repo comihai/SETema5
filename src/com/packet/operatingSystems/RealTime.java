@@ -24,6 +24,38 @@ public class RealTime implements IOperatingSystem {
         this.timeSharing = timeSharing;
     }
 
+    /**
+     * Constructor without params
+     */
+    public RealTime() {
+    }
+
+    /**
+     * Getters
+     *
+     * @return
+     */
+    public String getSchedulingAlgorithm() {
+        return schedulingAlgorithm;
+    }
+
+    public int getTimeSharing() {
+        return timeSharing;
+    }
+
+    /**
+     * Setters
+     *
+     * @param schedulingAlgorithm
+     */
+    public void setSchedulingAlgorithm(String schedulingAlgorithm) {
+        this.schedulingAlgorithm = schedulingAlgorithm;
+    }
+
+    public void setTimeSharing(int timeSharing) {
+        this.timeSharing = timeSharing;
+    }
+
     @Override
     public void systemCall() {
         System.out.println("This is a multitasking OS that aims at executing real-time apps ! The scheduling algorithm is " + schedulingAlgorithm + " and the time-sharing is " + timeSharing);

@@ -21,6 +21,30 @@ public class Embedded implements IOperatingSystem {
         this.autonomy = autonomy;
     }
 
+    /**
+     * Constructor without params
+     */
+    public Embedded() {
+    }
+
+    /**
+     * Getter for autonomy
+     *
+     * @return
+     */
+    public double getAutonomy() {
+        return autonomy;
+    }
+
+    /**
+     * Setter for autonomy
+     *
+     * @param autonomy
+     */
+    public void setAutonomy(double autonomy) {
+        this.autonomy = autonomy;
+    }
+
     @Override
     public void systemCall() {
         System.out.println("This operating system is designed to be used in embedded computer systems! Autonomy :  " + autonomy);

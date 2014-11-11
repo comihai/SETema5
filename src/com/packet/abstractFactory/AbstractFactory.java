@@ -9,6 +9,6 @@ import com.packet.interfaces.IProcessor;
  */
 public abstract class AbstractFactory {
 
-    abstract IOperatingSystem getOperatingSystem(String operatingSystem);
-    abstract IProcessor getProcessor(String processor);
+    public abstract IOperatingSystem getOperatingSystem(String operatingSystem);
+    public abstract IProcessor getProcessor(String processor);
 }

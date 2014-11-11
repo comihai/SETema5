@@ -4,7 +4,7 @@ import com.packet.interfaces.IOperatingSystem;
 
 /**
  * Created by mihai on 11/11/2014.
- *This is the third concrete object
+ * This is the third concrete object
  */
 public class Distributed implements IOperatingSystem {
 
@@ -15,9 +15,34 @@ public class Distributed implements IOperatingSystem {
 
     /**
      * Generic constructor
+     *
      * @param numberOfWorkingComputers Maxim number of computers that work in cooperation - distributed system
      */
     public Distributed(int numberOfWorkingComputers) {
+        this.numberOfWorkingComputers = numberOfWorkingComputers;
+    }
+
+    /**
+     * Constructor without params
+     */
+    public Distributed() {
+    }
+
+    /**
+     * Getter for numberOfWorkingComputers
+     *
+     * @return
+     */
+    public int getNumberOfWorkingComputers() {
+        return numberOfWorkingComputers;
+    }
+
+    /**
+     * Setter for numberOfWorkingComputers
+     *
+     * @param numberOfWorkingComputers
+     */
+    public void setNumberOfWorkingComputers(int numberOfWorkingComputers) {
         this.numberOfWorkingComputers = numberOfWorkingComputers;
     }
 

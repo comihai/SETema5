@@ -11,8 +11,8 @@ public class MainstreamProcessor implements IProcessor {
     /**
      * Private Members
      */
-    private int price;
-    private int powerRequired;
+    private int price = 0;
+    private int powerRequired = 0;
 
     /**
      * Generic constructor
@@ -22,6 +22,38 @@ public class MainstreamProcessor implements IProcessor {
      */
     public MainstreamProcessor(int price, int powerRequired) {
         this.price = price;
+        this.powerRequired = powerRequired;
+    }
+
+    /**
+     * Constructor without params
+     */
+    public MainstreamProcessor() {
+    }
+
+    /**
+     * Getters
+     *
+     * @return
+     */
+    public int getPrice() {
+        return price;
+    }
+
+    public int getPowerRequired() {
+        return powerRequired;
+    }
+
+    /**
+     * Setters
+     *
+     * @param price
+     */
+    public void setPrice(int price) {
+        this.price = price;
+    }
+
+    public void setPowerRequired(int powerRequired) {
         this.powerRequired = powerRequired;
     }
 

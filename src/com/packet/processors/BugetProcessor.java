@@ -10,7 +10,7 @@ public class BugetProcessor implements IProcessor {
     /**
      * Private member
      */
-    private int price;
+    private int price = 0;
 
     /**
      * Generic constructor
@@ -18,6 +18,30 @@ public class BugetProcessor implements IProcessor {
      * @param price The price for this type of processor
      */
     public BugetProcessor(int price) {
+        this.price = price;
+    }
+
+    /**
+     * Constructor without params
+     */
+    public BugetProcessor() {
+    }
+
+    /**
+     * Getter for price
+     *
+     * @return
+     */
+    public int getPrice() {
+        return price;
+    }
+
+    /**
+     * Setter for price
+     *
+     * @param price
+     */
+    public void setPrice(int price) {
         this.price = price;
     }
 

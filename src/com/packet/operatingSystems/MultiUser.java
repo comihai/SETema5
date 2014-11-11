@@ -22,6 +22,30 @@ public class MultiUser implements IOperatingSystem {
         this.numberOfUsers = numberOfUsers;
     }
 
+    /**
+     * Constructor without params
+     */
+    public MultiUser() {
+    }
+
+    /**
+     * Getter for numberOfUsers
+     *
+     * @return
+     */
+    public int getNumberOfUsers() {
+        return numberOfUsers;
+    }
+
+    /**
+     * Setter for numberOfUsers
+     *
+     * @param numberOfUsers
+     */
+    public void setNumberOfUsers(int numberOfUsers) {
+        this.numberOfUsers = numberOfUsers;
+    }
+
     @Override
     public void systemCall() {
         System.out.println("This is a operating system that allows multiple users to access a computer system at the same time! Maxim number of users is " + numberOfUsers);
