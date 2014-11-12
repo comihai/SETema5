@@ -1,4 +1,4 @@
-package com.packet.interfaces;
+package com.iwombat.interfaces;
 
 /**
  * Created by mihai on 11/11/2014.

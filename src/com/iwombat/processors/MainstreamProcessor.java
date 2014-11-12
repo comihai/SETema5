@@ -1,6 +1,6 @@
-package com.packet.processors;
+package com.iwombat.processors;
 
-import com.packet.interfaces.IProcessor;
+import com.iwombat.interfaces.IProcessor;
 
 /**
  * Created by mihai on 11/11/2014.

@@ -1,6 +1,6 @@
-package com.packet.operatingSystems;
+package com.iwombat.os;
 
-import com.packet.interfaces.IOperatingSystem;
+import com.iwombat.interfaces.IOperatingSystem;
 
 /**
  * Created by mihai on 11/11/2014.

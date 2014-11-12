@@ -1,11 +1,11 @@
-package com.packet.factories;
+package com.iwombat.adapters;
 
-import com.packet.abstractFactory.AbstractFactory;
-import com.packet.interfaces.IOperatingSystem;
-import com.packet.interfaces.IProcessor;
-import com.packet.processors.BugetProcessor;
-import com.packet.processors.DualCoreProcessor;
-import com.packet.processors.MainstreamProcessor;
+import com.iwombat.abstracts.AbstractFactory;
+import com.iwombat.interfaces.IOperatingSystem;
+import com.iwombat.interfaces.IProcessor;
+import com.iwombat.processors.BugetProcessor;
+import com.iwombat.processors.DualCoreProcessor;
+import com.iwombat.processors.MainstreamProcessor;
 
 /**
  * Created by mihai on 11/11/2014.

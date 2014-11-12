@@ -1,8 +1,8 @@
-package com.packet.factoryProducer;
+package com.iwombat;
 
-import com.packet.abstractFactory.AbstractFactory;
-import com.packet.factories.OperatingSystemFactory;
-import com.packet.factories.ProcessorFactory;
+import com.iwombat.abstracts.AbstractFactory;
+import com.iwombat.adapters.OperatingSystemFactory;
+import com.iwombat.adapters.ProcessorFactory;
 
 /**
  * Created by mihai on 11/11/2014.

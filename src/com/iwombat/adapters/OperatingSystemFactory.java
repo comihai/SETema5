@@ -1,12 +1,12 @@
-package com.packet.factories;
+package com.iwombat.adapters;
 
-import com.packet.abstractFactory.AbstractFactory;
-import com.packet.interfaces.IOperatingSystem;
-import com.packet.interfaces.IProcessor;
-import com.packet.operatingSystems.Distributed;
-import com.packet.operatingSystems.Embedded;
-import com.packet.operatingSystems.MultiUser;
-import com.packet.operatingSystems.RealTime;
+import com.iwombat.abstracts.AbstractFactory;
+import com.iwombat.interfaces.IOperatingSystem;
+import com.iwombat.interfaces.IProcessor;
+import com.iwombat.os.Distributed;
+import com.iwombat.os.Embedded;
+import com.iwombat.os.MultiUser;
+import com.iwombat.os.RealTime;
 
 /**
  * Created by mihai on 11/11/2014.

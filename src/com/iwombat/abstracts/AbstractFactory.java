@@ -1,11 +1,11 @@
-package com.packet.abstractFactory;
+package com.iwombat.abstracts;
 
-import com.packet.interfaces.IOperatingSystem;
-import com.packet.interfaces.IProcessor;
+import com.iwombat.interfaces.IOperatingSystem;
+import com.iwombat.interfaces.IProcessor;
 
 /**
  * Created by mihai on 11/11/2014.
- * Abstract class to get factories for OperatingSystem and Processor Objects
+ * Abstract class to get adapters for OperatingSystem and Processor Objects
  */
 public abstract class AbstractFactory {
 
