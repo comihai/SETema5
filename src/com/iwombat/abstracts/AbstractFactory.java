@@ -10,5 +10,6 @@ import com.iwombat.interfaces.IProcessor;
 public abstract class AbstractFactory {
 
     public abstract IOperatingSystem getOperatingSystem(String operatingSystem, int numberOfWorkingComputers, double autonomy, int numberOfUsers, String schedulingAlgorithm, int timeSharing);
+
     public abstract IProcessor getProcessor(String processor, int price, String cpuSocket, double frequency, int powerRequired);
 }

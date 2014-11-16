@@ -47,6 +47,6 @@ public class BugetProcessor implements IProcessor {
 
     @Override
     public void clockSpeed() {
-        System.out.println("This processor give up a bit of performance in exchange for a lower price!\n Price :  " + price+" $.");
+        System.out.println("This processor give up a bit of performance in exchange for a lower price!\n Price :  " + price + " $.");
     }
 }

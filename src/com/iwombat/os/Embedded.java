@@ -47,6 +47,6 @@ public class Embedded implements IOperatingSystem {
 
     @Override
     public void systemCall() {
-        System.out.println("This operating system is designed to be used in embedded computer systems!\n Autonomy :  " + autonomy +" units.");
+        System.out.println("This operating system is designed to be used in embedded computer systems!\n Autonomy :  " + autonomy + " units.");
     }
 }

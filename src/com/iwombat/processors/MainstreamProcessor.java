@@ -59,6 +59,6 @@ public class MainstreamProcessor implements IProcessor {
 
     @Override
     public void clockSpeed() {
-        System.out.println("This processor may be a good upgrade choice if you need more performance!\n Price :  " + price + " $ and power required " + powerRequired+" W.");
+        System.out.println("This processor may be a good upgrade choice if you need more performance!\n Price :  " + price + " $ and power required " + powerRequired + " W.");
     }
 }

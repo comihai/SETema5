@@ -48,6 +48,6 @@ public class MultiUser implements IOperatingSystem {
 
     @Override
     public void systemCall() {
-        System.out.println("This is a operating system that allows multiple users to access a computer system at the same time!\n Maxim number of users is " + numberOfUsers+".");
+        System.out.println("This is a operating system that allows multiple users to access a computer system at the same time!\n Maxim number of users is " + numberOfUsers + ".");
     }
 }
