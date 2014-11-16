@@ -3,6 +3,7 @@ package com.iwombat;
 import com.iwombat.abstracts.AbstractFactory;
 import com.iwombat.interfaces.IOperatingSystem;
 import com.iwombat.interfaces.IProcessor;
+import com.iwombat.manufacturers.FactoryProducer;
 
 /**
  * Created by mihai on 11/10/2014.

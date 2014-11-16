@@ -1,4 +1,4 @@
-package com.iwombat;
+package com.iwombat.manufacturers;
 
 import com.iwombat.abstracts.AbstractFactory;
 import com.iwombat.adapters.OperatingSystemFactory;
